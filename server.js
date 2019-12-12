@@ -4,7 +4,6 @@ const compression = require('compression')
 const bodyParser = require('body-parser')
 const helmet = require('helmet')
 const enforceHttps = require('express-sslify').HTTPS
-const login = require('./login')
 const app = express()
 
 if (process.env.NODE_ENV === 'production') {
